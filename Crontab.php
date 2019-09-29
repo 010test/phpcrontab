@@ -8,7 +8,7 @@
 
 /**
  * Class Crontab
- * description: php 实现类似 linux crontab 的定时任务功能，支持秒级定时
+ * description: 使用 php 实现类似 linux crontab 的定时任务功能，支持秒级定时
  * author: yhm.1234@163.com
  */
 class Crontab {
