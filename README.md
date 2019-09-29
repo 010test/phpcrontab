@@ -1,8 +1,8 @@
 # phpcrontab
 
-###使用 php 实现类似 linux crontab 的定时任务功能，支持秒级定时
+### 使用 php 实现类似 linux crontab 的定时任务功能，支持秒级定时
 
-####程序示例代码：
+#### 程序示例代码：
 
 ```php
 <?php
@@ -30,5 +30,6 @@ while (true) {
 }
 ```
 
-####输出结果如下：
+#### 输出结果如下：<br />
+
 ![avatar](http://image.phpernote.com/phpcrontab.png)
