@@ -19,7 +19,7 @@ class Crontab {
      * @param int $time
      * @return bool
      */
-    public static function parseCron($cron, $time) {
+    public static function parse($cron, $time) {
         $cronArray = self::getCronArray($cron);
 
         $now = explode(' ', date('s i G j n w', $time));
@@ -36,7 +36,7 @@ class Crontab {
      * @param $cron
      * @return array
      */
-    public static function getCronArray($cron) {
+    private static function getCronArray($cron) {
         $cronArray = explode(' ', $cron);
         $timeArray = [];
 

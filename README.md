@@ -20,7 +20,7 @@ echo date('Y-m-d H:i:s', time()) . "\r\n";
 while (true) {
     $time = time();
     foreach ($cron_list as &$cron) {
-        $result = Crontab::parseCron($cron['cron'], $time);
+        $result = Crontab::parse($cron['cron'], $time);
         if ($result) {
             echo date('Y-m-d H:i:s', $time) . ' ' . $cron['cron'] . ' ' . $cron['echo'] . "\r\n";
         }
